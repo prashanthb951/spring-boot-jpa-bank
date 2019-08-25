@@ -3,18 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="381390dc-39d7-4b7f-a115-ef5bbf6342fd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bank/service/serviceImpl/BankServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bank/service/serviceImpl/BankServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bank/model/Branch.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bank/model/Branch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bank/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bank/repository/UserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bank/resource/BankResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bank/resource/BankResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bank/resource/BranchResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bank/resource/BranchResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bank/resource/JwtAuthenticationResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bank/resource/JwtAuthenticationResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bank/security/JwtTokenUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bank/security/JwtTokenUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bank/security/JwtUserDetailsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bank/security/JwtUserDetailsService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bank/service/BankService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bank/service/BankService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bank/service/BranchService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bank/service/BranchService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bank/service/serviceImpl/BankServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bank/service/serviceImpl/BankServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bank/service/serviceImpl/BranchServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bank/service/serviceImpl/BranchServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bank/model/BranchBank.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
