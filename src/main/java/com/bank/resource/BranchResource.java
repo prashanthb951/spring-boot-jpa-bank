@@ -38,7 +38,7 @@ public class BranchResource {
      * @throws URISyntaxException if the Location URI syntax is incorrect
      */
     @PostMapping("/branches")
-    public ResponseEntity<Branch> createBranch(Branch branch)throws Exception{
+    public ResponseEntity<Branch> createBranch(@RequestBody Branch branch)throws Exception{
         log.debug("REST request to create branch : {}",branch);
         branch = branchService.save(branch);
         return ResponseEntity.created(new URI("/api/branches/" + branch.getIfsc()))

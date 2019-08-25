@@ -33,7 +33,7 @@ public class BankResource {
      * @throws URISyntaxException if the Location URI syntax is incorrect
      */
     @PostMapping("/banks")
-    public ResponseEntity<Bank> createBank(Bank bank)throws Exception{
+    public ResponseEntity<Bank> createBank(@RequestBody Bank bank)throws Exception{
         log.debug("REST request to create bank : {}",bank);
         bank = bankService.save(bank);
         return ResponseEntity.created(new URI("/api/banks/" + bank.getId()))

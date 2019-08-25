@@ -16,6 +16,7 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -33,7 +34,7 @@ public class JwtAuthenticationResource {
     @Autowired
     private JwtUserDetailsService userDetailsService;
 
-    @PostMapping(value = "/authenticate")
+    @PostMapping("/authenticate")
     public ResponseEntity<?> createAuthenticationToken(@RequestBody JwtRequest authenticationRequest) throws Exception {
 
         authenticate(authenticationRequest.getUsername(), authenticationRequest.getPassword());
@@ -46,7 +47,7 @@ public class JwtAuthenticationResource {
         return ResponseEntity.ok(new JwtResponse(token));
     }
 
-    @PostMapping(value = "/register")
+    @PostMapping("/register")
     public ResponseEntity<?> saveUser(@RequestBody UserDAO userDAO) throws Exception {
         userRepository.findByUserName(userDAO.getUsername()).ifPresent(existingUser -> {
             throw new LoginAlreadyUsedException();
