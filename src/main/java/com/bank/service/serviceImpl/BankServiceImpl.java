@@ -1,5 +1,6 @@
 package com.bank.service.serviceImpl;
 
+import com.bank.exception.LoginAlreadyUsedException;
 import com.bank.model.Bank;
 import com.bank.repository.BankRepository;
 import com.bank.resource.BankResource;
@@ -31,6 +32,9 @@ public class BankServiceImpl implements BankService {
 
     @Override
     public Bank save(Bank bank) {
+          bankRepository.findByName(bank.getName()).ifPresent(existingUser -> {
+            throw new RuntimeException("duplicate bank name");
+        });
         return bankRepository.save(bank);
     }
 
