@@ -18,7 +18,7 @@ public class BankServiceImpl implements BankService {
 
     private final Logger log = LoggerFactory.getLogger(BankResource.class);
 
-    private BankServiceImpl(BankRepository bankRepository){
+     BankServiceImpl(BankRepository bankRepository){
         this.bankRepository = bankRepository;
     }
 
