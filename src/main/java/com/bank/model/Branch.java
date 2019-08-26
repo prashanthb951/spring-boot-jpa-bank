@@ -1,9 +1,6 @@
 package com.bank.model;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.OneToOne;
+import javax.persistence.*;
 
 @Entity
 public class Branch {
@@ -15,7 +12,7 @@ public class Branch {
     private String city;
     private String district;
     private String state;
-    @OneToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = CascadeType.ALL)
     private Bank bank;
 
     public String getIfsc() {
