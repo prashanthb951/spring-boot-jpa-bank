@@ -1,6 +1,5 @@
 package com.bank.resource;
 
-import com.bank.model.Bank;
 import com.bank.model.Branch;
 import com.bank.service.BranchService;
 import com.bank.utill.HeaderUtill;
@@ -48,14 +47,14 @@ public class BranchResource {
 
 
     /**
-     * GET  /banks/:ifsc : get the "ifsc" bank.
+     * GET  /banks/.
      *
      * @param bankName
      * @param city
      * @return the ResponseEntity with status 200 (OK) and with body the branch, or with status 404 (Not Found)
      */
-    @GetMapping("/branches/{bankName}/{city}")
-    public ResponseEntity<List<Branch>> findByBankNameAndCity(@PathVariable String bankName, @PathVariable String city, @ApiParam Pageable pageable) {
+    @GetMapping("/branches")
+    public ResponseEntity<List<Branch>> findByBankNameAndCity(@RequestParam String bankName, @RequestParam String city, @ApiParam Pageable pageable) {
         log.debug("REST request to get Branches by bankName:{} and city : {}", bankName,city);
         return  Optional
                 .ofNullable( branchService.findByBankNameAndCity(bankName,city,pageable) )

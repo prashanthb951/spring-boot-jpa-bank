@@ -3,9 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="381390dc-39d7-4b7f-a115-ef5bbf6342fd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bank/model/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bank/model/Bank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bank/repository/BankRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bank/repository/BankRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bank/service/serviceImpl/BankServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bank/service/serviceImpl/BankServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bank/resource/BankResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bank/resource/BankResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bank/resource/BranchResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bank/resource/BranchResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bank/resource/JwtAuthenticationResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bank/resource/JwtAuthenticationResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bank/security/JwtTokenUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bank/security/JwtTokenUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bank/model/Branch.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bank/model/Branch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bank/resource/BankResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bank/resource/BankResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bank/resource/BranchResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bank/resource/BranchResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bank/resource/JwtAuthenticationResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bank/resource/JwtAuthenticationResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bank/security/JwtTokenUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bank/security/JwtTokenUtil.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,7 +36,7 @@
   <component name="ProjectId" id="1PhDkgI6tWpXafXqNHdU53wwiom" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/bank" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
@@ -97,16 +105,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/bank/security/JwtTokenUtil.java</url>
-          <line>47</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

@@ -48,8 +48,8 @@ public class BankResource {
      * @param ifsc the ifsc of the bank branch to retrieve
      * @return the ResponseEntity with status 200 (OK) and with body the bank, or with status 404 (Not Found)
      */
-    @GetMapping("/banks/{ifsc}")
-    public ResponseEntity<Bank> findByIFSCCode(@PathVariable String ifsc) {
+    @GetMapping("/banks")
+    public ResponseEntity<Bank> findByIFSCCode(@RequestParam String ifsc) {
         log.debug("REST request to get Bank by IFSC code : {}", ifsc);
         return  Optional
                 .ofNullable( bankService.findByIFSCCode(ifsc) )

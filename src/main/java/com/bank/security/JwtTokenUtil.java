@@ -3,6 +3,7 @@ package com.bank.security;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;
 
@@ -15,7 +16,8 @@ import java.util.function.Function;
 @Component
 public class JwtTokenUtil {
 
-    private String secret="secret";
+    @Value("${jwt.secret}")
+    private String secret;
 
     public String getUserNameFromToken(String token){
         return getClaimFromToken(token, Claims::getSubject);
